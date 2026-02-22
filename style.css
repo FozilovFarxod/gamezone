@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        270deg,
+        rgba(0, 255, 255, 0.25),
+        rgba(255, 0, 150, 0.25),
+        rgba(0, 150, 255, 0.25)
+    );
+
+    background-size: 600% 600%;
+    animation: bgMove 12s ease infinite;
+}
+
+@keyframes bgMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+
+
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 60px;
+  background:#374675;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+nav a{
+  margin:0 18px;
+  text-decoration:none;
+  color:#cfd6ff;
+}
+
+.auth{
+  display:flex;
+  gap:12px;
+}
+
+.btn{
+  padding:8px 16px;
+  background:#4f6cff;
+  border:none;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.btn.ghost{
+  background:transparent;
+  border:1px solid #4f6cff;
+}
+
+.hero{
+  height:420px;
+  background:
+    linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.2)),
+    url("images/hero.jpg") center/cover;
+  display:flex;
+  align-items:center;
+  padding-left:80px;
+}
+
+.hero h1{
+  font-size:52px;
+  margin-bottom:12px;
+}
+
+.hero p{
+  color:#cbd1ff;
+  margin-bottom:22px;
+}
+
+.hero-buttons{
+  display:flex;
+  gap:14px;
+}
+
+.games{
+  padding:60px 70px;
+}
+
+.games h2{
+  font-size:26px;
+  margin-bottom:30px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:26px;
+}
+
+.card{
+  background:#141a33;
+  border-radius:12px;
+  overflow:hidden;
+  transition:.25s;
+  align-items: center;
+  
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card h3{
+  padding:14px 14px 6px;
+  font-size:15px;
+}
+
+.play{
+  display:block;
+  margin:0 14px 14px;
+  text-align:center;
+  background:#4f6cff;
+  padding:8px;
+  border-radius:6px;
+  text-decoration:none;
+  color:white;
+  font-size:14px;
+}
